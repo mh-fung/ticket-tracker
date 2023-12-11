@@ -2,12 +2,12 @@ import { useState } from 'react'
 import './App.css'
 
 
-function App() {
+const App = () => {
 
   return (
     <>
       <div>
-      <p> </p>
+      <p></p>
       </div>
     </>
   )
