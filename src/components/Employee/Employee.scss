@@ -1,1 +1,14 @@
 @use "../../assets/variables" as *;
+
+.employee-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-black;
+    border-radius: 5px;
+    margin: 5px;
+
+    .employee__content {
+        padding: 10px 15px;
+        align-self: center;
+    }
+}

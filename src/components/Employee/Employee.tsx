@@ -8,9 +8,9 @@ type EmployeeProps = {
 
 const Employee = ({name, role}: EmployeeProps) => {
     return (
-        <div>
-            <p>Name: {name}</p>
-            <p>Role: {role}</p>
+        <div className="employee-container">
+            <p className="employee__content">Name: {name}</p>
+            <p className="employee__content">Role: {role}</p>
             <Counter />
         </div>
     );
