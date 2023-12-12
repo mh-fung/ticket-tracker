@@ -1,4 +1,3 @@
-import employee from "../../types/employee";
 import "./Employee.scss";
 import Counter from "../Counter/Counter";
 
@@ -8,7 +7,6 @@ type EmployeeProps = {
 };
 
 const Employee = ({name, role}: EmployeeProps) => {
-
     return (
         <div>
             <p>Name: {name}</p>

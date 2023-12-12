@@ -1,1 +1,23 @@
 @use "../../assets/variables" as *;
+
+.counter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .counter__heading {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .counter__button {
+        width: 30px;
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .counter {
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+}
