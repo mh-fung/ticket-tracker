@@ -32,14 +32,14 @@ const ExploreTeam = ({ team }: ExploreTeamProps) => {
         }
     });
     const employees = filteredTeam.map((employee => {
-        return <div key={employee.id}><Employee name={employee.name} role={employee.role} /></div>
+        return <Employee key={employee.id} name={employee.name} role={employee.role} />
     }))
 
     return (
         <div className="panel">
-        <SearchBox searchTerm={searchTerm} label="Search by Name: " handleInput={handleInput}/>
-        <DropdownBox label="Search by Role: " handleChange={handleChange}/>
-        {employees}
+            <SearchBox searchTerm={searchTerm} label="Search by Name: " handleInput={handleInput}/>
+            <DropdownBox label="Search by Role: " handleChange={handleChange}/>
+            {employees}
         </div>
     )
 };

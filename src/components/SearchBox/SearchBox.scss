@@ -3,3 +3,11 @@
 .search-box {
     padding: 5px;
 }
+
+@media screen and (min-width:$desktop-breakpoint) {
+    .search-box{
+        .input {
+            width: 10vw;
+        }
+    }
+}

@@ -6,10 +6,12 @@
     border: 1px solid $color-black;
     border-radius: 5px;
     margin: 5px;
+    background: linear-gradient(180deg, $color-secondary 45%, $color-white 100%);
 
     .employee__content {
         padding: 10px 15px;
         align-self: center;
+        color: $color-white;
     }
 }
 
@@ -21,7 +23,8 @@
 
 @media screen and (min-width:$desktop-breakpoint) {
     .employee-container {
-        width: 25vw;
+        width: 20vw;
+        
     }
 }
 

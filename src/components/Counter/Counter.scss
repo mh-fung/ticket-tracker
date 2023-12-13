@@ -9,6 +9,7 @@
         padding-top: 10px;
         width: 80vw;
         text-align: center;
+        color: $color-primary;
     }
 
     .counter__button {
@@ -16,26 +17,17 @@
         height: 30px;
         font-size: 15px;
         margin: 15px 10px;
+        background: linear-gradient(180deg, $color-white 0%, $color-secondary-light 50%, $color-white 100%);
+        border-radius:15px;
+    }
+
+    .counter__button:active {
+        position: relative;
+        top: 1px
     }
 
     .counter {
         font-size: 20px;
         margin: 14px 0px 0px 0px;
-    }
-}
-
-@media screen and (min-width:$tablet-breakpoint) {
-    .counter-container {
-        .counter__heading {
-            width: 90vw;
-        }
-    }
-}
-
-@media screen and (min-width:$desktopLarge-breakpoint) {
-    .counter-container {
-        .counter__heading {
-            width: 95vw;
-        }
     }
 }

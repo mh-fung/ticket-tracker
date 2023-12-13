@@ -11,7 +11,7 @@ const SearchBox = ({label, searchTerm, handleInput}: SearchBoxProps) => {
     return (
         <div className="search-box">
             <label htmlFor={label}>{label}</label>
-            <input type="text" value={searchTerm} onInput={handleInput}/>
+            <input className="input" type="text" value={searchTerm} onInput={handleInput}/>
         </div>
     );
 };
