@@ -10,7 +10,6 @@ const App = () => {
       <section className="employees-container">
         <ExploreTeam team={team}/>
       </section>
-      
     </div>
   )
 }

@@ -21,10 +21,10 @@ const ExploreTeam = ({ team }: ExploreTeamProps) => {
     }))
 
     return (
-        <>
-        <SearchBox searchTerm={searchTerm} label="Search by Name " handleInput={handleInput}/>
+        <div>
+        <SearchBox searchTerm={searchTerm} label="Search by Name: " handleInput={handleInput}/>
         {employees}
-        </>
+        </div>
     )
 };
 
