@@ -1,0 +1,33 @@
+@use "../../assets/variables" as *;
+
+
+
+
+@media screen and (min-width:$tablet-breakpoint) {
+    .panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 700px;
+    }
+}
+
+@media screen and (min-width:$desktop-breakpoint) {
+    .panel {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 900px;
+        :nth-child(2) {
+            grid-column-end: 4;
+        }
+    }
+}
+
+@media screen and (min-width:$desktop-breakpoint) {
+    .panel {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 90vw;
+        :nth-child(2) {
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+    }
+}

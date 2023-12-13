@@ -3,6 +3,7 @@ import employee from "../../types/employee"
 import Employee from "../../components/Employee/Employee";
 import SearchBox from "../../components/SearchBox/SearchBox";
 import DropdownBox from "../../components/DropdownBox/DropdownBox";
+import "./ExploreTeam.scss"
 
 type ExploreTeamProps = {
     team: employee[];
@@ -35,7 +36,7 @@ const ExploreTeam = ({ team }: ExploreTeamProps) => {
     }))
 
     return (
-        <div>
+        <div className="panel">
         <SearchBox searchTerm={searchTerm} label="Search by Name: " handleInput={handleInput}/>
         <DropdownBox label="Search by Role: " handleChange={handleChange}/>
         {employees}

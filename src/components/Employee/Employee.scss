@@ -12,3 +12,21 @@
         align-self: center;
     }
 }
+
+@media screen and (min-width:$tablet-breakpoint) {
+    .employee-container {
+        width: 35vw;
+    }
+}
+
+@media screen and (min-width:$desktop-breakpoint) {
+    .employee-container {
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width:$desktopLarge-breakpoint) {
+    .employee-container {
+        width: 20vw;
+    }
+}
